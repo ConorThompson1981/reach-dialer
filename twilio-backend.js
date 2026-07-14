@@ -32,14 +32,12 @@ const PUBLIC_BASE_URL = process.env.PUBLIC_BASE_URL; // e.g. https://reach-diale
 
 // --- Your local-presence number pool. Populate with numbers you buy in Twilio. ---
 const NUMBER_POOL = [
-  { areaCode: '514', number: '+15145550100' }, // Montreal
-  { areaCode: '438', number: '+15145550100' },
-  { areaCode: '418', number: '+14185550101' }, // Quebec City
-  { areaCode: '613', number: '+16135550102' }, // Ottawa
-  { areaCode: '416', number: '+14165550103' }, // Toronto
-  { areaCode: '647', number: '+14165550103' },
+  { areaCode: '647', number: '+16475030473' }, // Toronto — your first live number
+  { areaCode: '416', number: '+16475030473' },
 ];
 const DEFAULT_NUMBER = NUMBER_POOL[0].number;
+// As you buy more numbers (e.g. 514/438 Montreal, 418 Quebec City, 613 Ottawa)
+// for the ifm efector search, add them here as { areaCode: 'XXX', number: '+1XXXXXXXXXX' }
 
 function pickOutboundNumber(candidatePhone) {
   const areaCode = candidatePhone.replace(/\D/g, '').slice(-10, -7);
