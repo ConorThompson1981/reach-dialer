@@ -20,9 +20,11 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const twilio = require('twilio');
 
 const app = express();
+app.use(cors()); // allows the browser-based test page / dashboard to call this backend
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
