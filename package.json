@@ -1,0 +1,14 @@
+{
+  "name": "reach-dialer-backend",
+  "version": "1.0.0",
+  "description": "Twilio call + auto-text backend for candidate follow-up",
+  "main": "twilio-backend.js",
+  "scripts": {
+    "start": "node twilio-backend.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "body-parser": "^1.20.2",
+    "twilio": "^5.2.2"
+  }
+}
