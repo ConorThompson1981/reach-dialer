@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "twilio": "^5.2.2"
   }
 }
